@@ -15,3 +15,7 @@
 - Component -> Render Fake data Shimmer UI -> API Fetch -> Render real data
 - Component Dependency rerender if u have put in dependency
 - React Router Dom and Creating a Router
+- Weather App is created with API version do not push as api key is there how can we use env in this find it out
+- useAPI,useActionState,useFormStatus
+- useMemo,useCallback why not necessayr now due to above new React 19 hooks
+j

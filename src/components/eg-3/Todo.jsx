@@ -1,20 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import { useFetchTodo } from "./useFetchTodo";
 
 export default function Todo() {
   const [input, setInput] = useState("");
-  const [todos, setTodos] = useState([]);
 
-  const fetchTodo = async () => {
-    const res = await fetch("https://jsonplaceholder.typicode.com/todos/");
-    const jsondata = await res.json();
-    setTodos(jsondata);
-  };
-
-  useEffect(() => {
-    console.log("use effect called");
-    fetchTodo();
-  }, [input]);
-
+  const todos = useFetchTodo();
   console.log("todo component is rendered");
   return (
     <div>

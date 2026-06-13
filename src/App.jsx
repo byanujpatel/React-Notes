@@ -6,6 +6,7 @@ import { createBrowserRouter, Link, RouterProvider } from "react-router-dom";
 import About from "./components/eg-4/About";
 import Home from "./components/eg-4/Home";
 import TodoDetails from "./components/eg-4/TodoDetails";
+import WeatherApp from "./components/eg-5/WeatherApp";
 
 const appRouter = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const appRouter = createBrowserRouter([
   {
     path: "/todo/:id",
     element: <TodoDetails />,
+  },
+  {
+    path: "/weather",
+    element: <WeatherApp />,
   },
 ]);
 
